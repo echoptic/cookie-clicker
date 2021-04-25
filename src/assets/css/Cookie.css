@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.cookie {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.cookie-button {
+  outline-width: 0;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.click-canvas {
+  border: 1px solid black;
+  position: absolute;
+  pointer-events: none;
+  top: 1px;
+}
+
+.cookie-img {
+  width: 110%;
+  height: 110%;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.1s;
+}
+
+.cookie-img:hover {
+  width: 111%;
+  height: 111%;
+  bottom: 10px;
+  right: 10px;
+}
+
+.cookie-img:active {
+  width: 114%;
+  height: 114%;
+  bottom: 15px;
+  right: 15px;
+}
+
+p {
+  color: white;
+  font-size: 200%;
+  font-family: Lobster;
+}
