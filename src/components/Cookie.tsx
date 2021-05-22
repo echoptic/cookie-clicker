@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import CookieCanvas from './CookieCanvas';
 
 import '../assets/css/Cookie.css';
 import cookie from '../assets/images/cookie.png';
@@ -32,7 +31,6 @@ const Cookie: React.FC = () => {
         <button className="cookie-button" onClick={cookieClicked}>
           <img className="cookie-img" src={cookie} alt="" />
         </button>
-        <CookieCanvas />
       </div>
     </>
   );
