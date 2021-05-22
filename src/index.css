@@ -1,4 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 body {
-  font-family: monospace;
+  font-family: Lobster;
   background-color: cornflowerblue;
+}
+
+.title {
+  color: white;
+  font-size: 250%;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: brown;
+}
+
+.upgrades {
+  border: 6px solid black;
+  border-bottom: 1px solid black;
+}
+
+.upgrades-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.cookie-count {
+  background: rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: -20%;
 }

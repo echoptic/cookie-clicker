@@ -1,11 +1,17 @@
-import Cookie from './components/Cookie';
+import Cookie from "./components/Cookie";
+import UpgradesMenu from "./components/UpgradesMenu";
 
-import React from 'react';
+import React from "react";
 
 const App: React.FC = () => {
   return (
     <>
-      <Cookie />
+      <div className="split left">
+        <Cookie />
+      </div>
+      <div className="split right">
+        <UpgradesMenu />
+      </div>
     </>
   );
 };
