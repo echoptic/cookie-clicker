@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import '../assets/css/Upgrades.css';
+import "../assets/css/Upgrades.css";
 
-const Upgrade: React.FC<{ name: string }> = ({ name }) => {
+const Upgrade: React.FC<{
+  name: string;
+  cookieCount?: number;
+  minCount?: number;
+}> = ({ name, cookieCount = 0, minCount = 0 }) => {
   return (
     <div
       className="upgrades"
@@ -11,7 +15,7 @@ const Upgrade: React.FC<{ name: string }> = ({ name }) => {
       }}
     >
       <h1 className="upgrade-button" onClick={() => console.log(name)}>
-        {name}
+        {cookieCount < minCount ? "???" : name}
       </h1>
     </div>
   );

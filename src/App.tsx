@@ -1,16 +1,21 @@
-import Cookie from "./components/Cookie";
-import UpgradesMenu from "./components/UpgradesMenu";
+import React, { useState } from "react";
 
-import React from "react";
+import Cookie from "./components/Cookie";
+import UpgradeMenu from "./components/UpgradeMenu";
 
 const App: React.FC = () => {
+  const [cookieCount, setCookieCount] = useState(0);
+
   return (
     <>
       <div className="split left">
-        <Cookie />
+        <Cookie
+          cookieCount={cookieCount}
+          onClick={() => setCookieCount(cookieCount + 1)}
+        />
       </div>
       <div className="split right">
-        <UpgradesMenu />
+        <UpgradeMenu cookieCount={cookieCount} />
       </div>
     </>
   );
