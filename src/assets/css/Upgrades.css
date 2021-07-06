@@ -1,0 +1,7 @@
+.upgrades:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.upgrades:active {
+  background: rgba(0, 0, 0, 0.4);
+}

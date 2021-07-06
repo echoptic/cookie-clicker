@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import "../assets/css/Cookie.css";
-import cookie from "../assets/images/cookie.png";
+import '../assets/css/Cookie.css';
+import cookie from '../assets/images/cookie.png';
 
 const Cookie: React.FC = () => {
   const [cookieCount, setCookieCount] = useState(0);
@@ -12,9 +12,10 @@ const Cookie: React.FC = () => {
 
   useEffect(() => {
     // Cookie Button
-    const cookieButton = document.querySelector("button") as HTMLButtonElement;
-    cookieButton.addEventListener("mousedown", (e) => {
-      console.log(e);
+    const cookieButton = document.querySelector('button') as HTMLButtonElement;
+    cookieButton.addEventListener('mousedown', (e) => {
+      const click = new Audio('https://www.fesliyanstudios.com/play-mp3/6247');
+      click.play();
     });
   }, []);
 
@@ -36,8 +37,8 @@ const Cookie: React.FC = () => {
           </p>
           <p
             style={{
-              fontSize: "20px",
-              color: "white",
+              fontSize: '20px',
+              color: 'white',
               marginTop: 0,
             }}
           >

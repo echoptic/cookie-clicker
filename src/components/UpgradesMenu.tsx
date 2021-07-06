@@ -1,6 +1,6 @@
-import Upgrade from "./Upgrade";
+import Upgrade from './Upgrade';
 
-import React from "react";
+import React from 'react';
 
 const UpgradesMenu: React.FC = () => {
   return (
@@ -8,16 +8,16 @@ const UpgradesMenu: React.FC = () => {
       <p
         className="title"
         style={{
-          position: "relative",
-          left: "45%",
+          position: 'relative',
+          left: '45%',
           margin: 0,
         }}
       >
         Store
       </p>
-      <Upgrade name="upgrade 1" />
-      <Upgrade name="2" />
-      <Upgrade name="3" />
+      <Upgrade name="Cursor" />
+      <Upgrade name="???" />
+      <Upgrade name="???" />
     </div>
   );
 };

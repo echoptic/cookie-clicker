@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+
+import '../assets/css/Upgrades.css';
 
 const Upgrade: React.FC<{ name: string }> = ({ name }) => {
   return (
@@ -8,7 +10,9 @@ const Upgrade: React.FC<{ name: string }> = ({ name }) => {
         height: 65,
       }}
     >
-      <h1>{name}</h1>
+      <h1 className="upgrade-button" onClick={() => console.log(name)}>
+        {name}
+      </h1>
     </div>
   );
 };
